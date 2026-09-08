@@ -57,7 +57,7 @@ nav a:hover, nav a:focus-visible { color: white; }
   display: grid;
   align-items: end;
   overflow: hidden;
-  background: url("assets/florida-coast-hero.png") center/cover no-repeat;
+  background: url("https://live.staticflickr.com/65535/48775326181_f46105edf1_o.jpg") center/cover no-repeat;
 }
 .hero-overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(3, 12, 24, .96) 0%, rgba(3, 12, 24, .76) 43%, rgba(3, 12, 24, .14) 78%), linear-gradient(0deg, #06111f 0%, transparent 34%); }
 .hero-content { position: relative; z-index: 1; width: min(90rem, 100%); padding: 8rem clamp(1.2rem, 5vw, 5rem) 5rem; }
