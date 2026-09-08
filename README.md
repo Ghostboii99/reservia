@@ -8,7 +8,7 @@ A responsive Florida travel-booking concept rebuilt as a portfolio-ready front-e
 - Accessible semantic HTML and keyboard-friendly controls
 - Functional destination filtering with live results
 - Custom midnight-explorer visual system
-- Original Florida coast hero artwork
+- CC0 beachfront hero photography with source attribution
 - No framework or build step required
 
 ## Run locally
@@ -25,10 +25,11 @@ Then visit `http://localhost:8000`.
 
 ```text
 reservia/
-├── assets/florida-coast-hero.png
 ├── index.html
 ├── script.js
 └── styles.css
 ```
 
 Built by Fred as a responsive front-end portfolio project.
+
+Hero photograph: [ThemeIsle MyStock](https://mystock.themeisle.com/photo/luxurious-hotel-on-the-beach-at-night/) (CC0).
