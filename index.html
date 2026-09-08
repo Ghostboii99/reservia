@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Reservia helps you discover memorable Florida stays and weekend escapes.">
+  <title>Reservia — Florida stays worth the drive</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Reservia home">
+      <span class="brand-mark" aria-hidden="true">R</span>
+      <span>reservia</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="#stays">Stays</a>
+      <a href="#experiences">Experiences</a>
+      <a class="nav-cta" href="#about">About</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Florida, one weekend at a time</p>
+        <h1 id="hero-title">Find a stay worth leaving early for.</h1>
+        <p class="hero-copy">Curated coastal rooms, city hideaways, and quiet escapes—close enough for a weekend, good enough to remember.</p>
+
+        <form class="search-panel" id="search-form">
+          <label>
+            <span>Where</span>
+            <select id="destination" name="destination">
+              <option value="all">Anywhere in Florida</option>
+              <option value="st-augustine">St. Augustine</option>
+              <option value="tampa">Tampa</option>
+              <option value="miami">Miami</option>
+              <option value="keys">Florida Keys</option>
+            </select>
+          </label>
+          <label>
+            <span>Check in</span>
+            <input id="check-in" name="check-in" type="date">
+          </label>
+          <label>
+            <span>Travelers</span>
+            <select id="travelers" name="travelers">
+              <option>1 guest</option>
+              <option selected>2 guests</option>
+              <option>3 guests</option>
+              <option>4+ guests</option>
+            </select>
+          </label>
+          <button type="submit">Explore stays <span aria-hidden="true">↗</span></button>
+        </form>
+        <p class="search-status" id="search-status" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="section stays-section" id="stays" aria-labelledby="stays-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Shortlist</p>
+          <h2 id="stays-title">Florida stays with a point of view</h2>
+        </div>
+        <p>Every pick balances location, character, and a reason to step outside.</p>
+      </div>
+
+      <div class="stay-grid" id="stay-grid">
+        <article class="stay-card" data-destination="st-augustine">
+          <div class="card-art art-coral"><span>STA</span><small>Atlantic morning</small></div>
+          <div class="card-body">
+            <div><p class="card-kicker">St. Augustine</p><h3>Old City Courtyard</h3></div>
+            <p>Brick-lined calm two blocks from the historic district.</p>
+            <div class="card-meta"><span>★ 4.9</span><strong>From $148</strong></div>
+          </div>
+        </article>
+
+        <article class="stay-card" data-destination="tampa">
+          <div class="card-art art-cyan"><span>TPA</span><small>City energy</small></div>
+          <div class="card-body">
+            <div><p class="card-kicker">Tampa</p><h3>Channel District Loft</h3></div>
+            <p>Clean lines, walkable nights, and a rooftop built for sunset.</p>
+            <div class="card-meta"><span>★ 4.8</span><strong>From $172</strong></div>
+          </div>
+        </article>
+
+        <article class="stay-card" data-destination="miami">
+          <div class="card-art art-violet"><span>MIA</span><small>After dark</small></div>
+          <div class="card-body">
+            <div><p class="card-kicker">Miami</p><h3>Midnight on Collins</h3></div>
+            <p>Art Deco character with the ocean at the end of the block.</p>
+            <div class="card-meta"><span>★ 4.7</span><strong>From $219</strong></div>
+          </div>
+        </article>
+
+        <article class="stay-card" data-destination="keys">
+          <div class="card-art art-amber"><span>EYW</span><small>Slow island time</small></div>
+          <div class="card-body">
+            <div><p class="card-kicker">Florida Keys</p><h3>Harbor Light Bungalow</h3></div>
+            <p>A private porch, salt air, and nothing urgent on the schedule.</p>
+            <div class="card-meta"><span>★ 5.0</span><strong>From $246</strong></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section experience-section" id="experiences" aria-labelledby="experience-title">
+      <div class="experience-copy">
+        <p class="eyebrow">Beyond the room</p>
+        <h2 id="experience-title">Pick the feeling first.</h2>
+        <p>Sometimes the best trip starts with what you want to do—not where you want to sleep.</p>
+      </div>
+      <div class="experience-list">
+        <a href="#stays"><span>01</span><strong>Coastal reset</strong><em>Quiet water. Late checkout.</em></a>
+        <a href="#stays"><span>02</span><strong>City weekend</strong><em>Good food. No car needed.</em></a>
+        <a href="#stays"><span>03</span><strong>Old Florida</strong><em>History. Character. Shade.</em></a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="about">
+    <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">R</span><span>reservia</span></a>
+    <p>A responsive front-end booking concept. Built by Fred.</p>
+    <a href="https://github.com/Ghostboii99/reservia">View source ↗</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
